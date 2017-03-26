@@ -152,10 +152,10 @@ public class AlgoApriori {
 			for (int i=0; i< lineSplited.length; i++) { 
 				// transform this item from a string to an integer
 
-				BigInteger bigInt = new BigInteger(lineSplited[i].getBytes());
-				Integer item = bigInt.intValue();
+//				BigInteger bigInt = new BigInteger(lineSplited[i].getBytes());
+//				Integer item = bigInt.intValue();
 
-//				Integer item = Integer.parseInt(lineSplited[i]);
+				Integer item = Integer.parseInt(lineSplited[i]);
 				// store the item in the memory representation of the database
 				transaction[i] = item;
 				// increase the support count
